@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>aka.supermarket</groupId>
+	<artifactId>aka-supermarket</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>aka-supermarket</name>
+	
+	<description>aka-supermarket project for Spring Boot</description>
+	
+	<properties>
+		<java.version>1.8</java.version>
+		<junit.version>4.13.2</junit.version>
+		<json-version>2.8.6</json-version>
+		<math3.version>3.5</math3.version>
+	</properties>
+	
+	<profiles>
+	  <profile>
+	    <id>default</id>
+	    <properties>
+	      	<env>local</env>
+	      	<spring.profiles.active>default</spring.profiles.active>
+	    </properties>
+	    <activation>
+				<activeByDefault>true</activeByDefault>
+		</activation>
+	  </profile>
+	</profiles>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+		        <exclusion>
+        	    	<artifactId>logback-classic</artifactId>
+            		<groupId>ch.qos.logback</groupId>
+        		</exclusion>
+    		</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>${junit.version}</version>
+		    <scope>test</scope>
+		</dependency>		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-math3</artifactId>
+		    <version>${math3.version}</version>
+		</dependency>		
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>${json-version}</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!--   <groupId>com.google.code.gson</groupId> -->
+<!--   <artifactId>gson</artifactId> -->
+<!--   <version>2.8.6</version> -->
+<!-- </dependency> -->
+		
+<!-- 		<dependency> -->
+<!-- 		    <groupId>com.googlecode.json-simple</groupId> -->
+<!-- 		    <artifactId>json-simple</artifactId> -->
+<!-- 		    <version>1.1.1</version> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<archive><!--  -->
+						<manifest><!--  -->
+							<mainClass>fr.aka.supermarket.AkaSupermarketApplication</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>aka-supermarket-${env}</finalName>
+	</build>
+
+
+</project>

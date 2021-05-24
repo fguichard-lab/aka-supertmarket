@@ -1,0 +1,21 @@
+#logs
+logging:
+   file.name: D:/Work/files/logs/aka.log
+   level:
+      '[org.springframework.web]': ERROR
+      root: INFO
+   pattern:
+      file: "%d{yy-MMMM-dd HH:mm:ss} %5p %t %c{2}:%L - %m%n"
+      console: "%d{yy-MMMM-dd HH:mm:ss} %5p %t %c{2}:%L - %m%n"
+      
+      
+#filenames
+path:
+  filenames:
+    item: D:/aka-supermarket/items.json
+    cart: D:/aka-supermarket/cart.json
+    discount: D:/aka-supermarket/discounts.json
+    test:
+      item: D:/aka-supermarket/items.test.json
+      cart: D:/aka-supermarket/cart.test.json
+      discount: D:/aka-supermarket/discounts.test.json

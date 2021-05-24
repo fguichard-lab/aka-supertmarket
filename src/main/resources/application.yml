@@ -1,0 +1,7 @@
+spring:
+#   main:
+#    banner-mode: console
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: aka-supermarket          

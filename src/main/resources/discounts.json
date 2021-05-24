@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Buy1Free",
+		"itemCode": "123",
+		"quantity": "3",
+		"priceOfDiscount": "0.90"
+	},
+	{
+		"name": "Buy1Free",
+		"itemCode": "456",
+		"quantity": "2",
+		"priceOfDiscount": "3.5"
+	},
+	{
+		"name": "BuyFor",
+		"itemCode": "345",
+		"quantity": "3",
+		"priceOfDiscount": "1.20"
+	}
+]

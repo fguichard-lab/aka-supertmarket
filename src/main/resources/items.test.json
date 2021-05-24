@@ -1,0 +1,26 @@
+[
+	{
+		"code": "123",
+		"name": "artichaut",
+		"priceUnit": "0.90",
+		"priceKilo": "false"
+	},
+	{
+		"code": "234",
+		"name": "pack 6 bootle of water",
+		"priceUnit": "6.00",
+		"priceKilo": "false"
+	},
+	{
+		"code": "345",
+		"name": "salade",
+		"priceUnit": "1.20",
+		"priceKilo": "false"
+	},
+	{
+		"code": "456",
+		"name": "tomate",
+		"priceUnit": "3.5",
+		"priceKilo": "true"
+	}
+]

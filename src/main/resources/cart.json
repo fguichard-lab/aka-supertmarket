@@ -1,0 +1,46 @@
+[
+	{
+		"itemBought": "123",
+		"quantity": "1.0"
+	},
+	{
+		"itemBought": "123",
+		"quantity": "1"
+	},
+	{
+		"itemBought": "123",
+		"quantity": "2"
+	},
+	{
+		"itemBought": "123",
+		"quantity": "1"
+	},
+	{
+		"itemBought": "123",
+		"quantity": "1"
+	},
+	{
+		"itemBought": "123",
+		"quantity": "2"
+	},	
+	{
+		"itemBought": "234",
+		"quantity": "1"
+	},
+	{
+		"itemBought": "456",
+		"quantity": "5"
+	},
+	{
+		"itemBought": "345",
+		"quantity": "4"
+	},	
+	{
+		"itemBought": "234",
+		"quantity": "1"
+	},
+	{
+		"itemBought": "345",
+		"quantity": "4"
+	}	
+]
